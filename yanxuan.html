@@ -1,0 +1,1946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>网易严选</title>
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+  <!-- <script>
+        window.onload=function(){
+            var imgs_div=document.getElementById("imgs");
+            var nav_div=document.getElementById("nav");
+            var imgsUl=imgs_div.getElementsByTagName("ul")[0];
+            var nav=nav_div.getElementsByTagName("ul")[0];
+            var prious=document.getElementById("preous");
+            var next=document.getElementById("next");
+            var timer;
+            var animTimer;
+            var index=1;
+            play();
+            prious.onclick=function(){
+                initImgs(index);
+                index-=1;
+                if(index<1){
+                    index=7;
+                }
+                animate(1920);
+                btnShow(index);
+            }
+            next.onclick=function(){
+                initImgs(index);
+                index+=1;
+                if(index>7){
+                    index=1;
+                }
+                animate(-1920);
+                btnShow(index);
+            }
+            function animate(offset){
+                var newLeft=parseInt(imgsUl.offsetLeft)+offset;
+                if(newLeft>-1920){
+                    donghua(-13440);
+                }else if(newLeft<-13440){
+                    donghua(-1920);
+                }else{
+                    donghua(newLeft);
+                }
+            }
+            function donghua(offset){
+                clearInterval(animTimer);
+                animTimer=setInterval(function(){
+                    imgsUl.style.left=imgsUl.offsetLeft+(offset-imgsUl.offsetLeft)/10+"px";
+                    if(imgsUl.offsetLeft-offset<10&&imgsUl.offsetLeft-offset>-10){
+                        imgsUl.style.left=offset+"px";
+                        clearInterval(animTimer);
+                        play();
+                    }
+                },20);
+            }
+            function initImgs(cur_index){
+                clearInterval(timer);
+                clearInterval(animTimer);
+                var off=cur_index*1920;
+                imgsUl.style.left=-off+"px";
+            }
+            function play(){
+                timer=setInterval(function(){
+                    next.onclick();
+                },1000);
+            }
+            function btnShow(cur_index){
+                var list=nav.children;
+                for(var i=0;i<nav.children.length;i++){
+                    nav.children[i].children[0].className="hidden";
+                }
+                nav.children[cur_index-1].children[0].className="current";
+            }
+            for(var i=0;i<nav.children.length;i++){
+                nav.children[i].index=i;
+                var sd=nav.children[i].index;
+                nav.children[i].onmouseover=function(){
+                    index=this.index+1;
+                    initImgs(this.index+1);
+                    btnShow(this.index+1);
+                }
+                nav.children[i].onmouseout=function(){
+                    play();
+                }
+            }
+        }
+    </script> -->
+</head>
+<body>
+<div class="righttop">
+	<div class="first">
+		<img src="./css/images/ba6194cb49e7ccc4bdb1204392dca9a6.gif" >
+	</div>
+	<div class="second">
+		<a href="#"><i class="fa fa-gift"></i></a>
+		<div class="yi"><a href="#">新人有礼</a></div>
+	</div>
+	<div class="third">
+		<img src="./css/images/canvas.png">
+		<div class="z">
+		<div class="er">扫码领</div>
+		<div class="san">APP1000元</div>
+		<div class="si">新人礼</div>
+		</div>
+	</div>
+	<div class="fourth">
+		<a href="#"><i class="fa fa-feed"></i></a>
+		<div class="ding"><a href="#">订阅电子刊</a></div>
+</div>
+<div class="fifth">
+	<a href="#"><i class="fa fa-headphones"></i></a>
+	<div class="zai"><a href="#">在线客服</a></div>
+</div>
+</div>
+
+<div class="Top">
+	<div class="top">
+		<div class="site-nav">
+			<div class="site-wrap">
+			<div class="left">
+				<div class="first">好的生活，没那么贵</div>
+				<div class="second"><i class="fa fa-volume-up"></i><a href="#">下载严选APP，抢1元包邮团</a>
+				</div>
+				</div>
+				<div class="right">
+					<ul class="links">
+						<li><a href="#">注册</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="#">登录</a></li>
+						
+						<li><a href="#">&nbsp;&nbsp;我的订单</a></li>
+						<li><a href="#">&nbsp;&nbsp;会员</a></li>
+						<li><a href="#">&nbsp;&nbsp;甄选家</a></li>
+						<li><a href="#">&nbsp;&nbsp;企业选购</a></li>
+						<li><a href="#">&nbsp;&nbsp;客户服务</a></li>
+						<li><a href="#">&nbsp;&nbsp;APP</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="functab">
+			<div class="functab-wrap">
+				<div class="bq">
+					<div class="A">网易</div>
+					<div class="B">Y A N X U A N</div>
+					<div class="C">严选</div>
+					
+					<div class="sousuo">
+						<input type="text" placeholder="服装季末超惠价"><a href="#"><i class="fa fa-search"></i></a>
+					</div>
+					<div class="gouwu"><a href="#"><i class="fa fa-shopping-cart"></i></a></div>
+				</div>
+				<div class="nav">
+					<ul class="link">
+						<li>
+						<a href="#">首页</a>
+						</li>
+						<li>
+						  <a href="#">居家</a>
+               <div class="sub-nav">
+                  <ul>
+              		<li>
+              			<div class="xialiang">
+              				
+              			</div>
+              			<a href="#">夏凉</a>
+              			
+              		</li>
+            		<li>
+            			<div class="chuangpin"></div>
+            			<a href="#">床品件套</a>
+            		</li>
+            		<li>
+            			<div class="beizhen"></div>
+            			<a href="#">被枕</a>
+            		</li>
+            		<li>
+            			<div class="jiaju"></div>
+            			<a href="#">家具</a>
+            		</li>
+            		<li>
+            			<div class="dengju"></div>
+            			<a href="#">灯具</a>
+            		</li>
+            		<li>
+            			<div class="shouna"></div>
+            			<a href="#">收纳</a>
+            		</li>
+            		<li>
+            			<div class="buyi"></div>
+            			<a href="#">布艺软装</a>
+            		</li>
+            		<li>
+            			<div class="jiashi"></div>
+            			<a href="#">家饰</a>
+            		</li>
+            		<li>
+            			<div class="lvxing"></div>
+            			<a href="#">旅行用品</a>
+            		</li>
+          		<li>
+          			<div class="shailiang"></div>
+          			<a href="#">晒晾除味</a>
+          		</li>
+          		<li>
+          			<div class="yiliao"></div>
+          			<a href="#">家庭医疗</a>
+          		</li>
+          		<li>
+          			<div class="chongwu"></div>
+          			<a href="#">宠物</a>
+          		</li>
+                            		
+                            	</ul>
+                            </div>
+						</li>
+						<li>
+						<a href="#">鞋包配饰</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">行李箱</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">女士包袋</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">男士包袋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">钱包及小皮件</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">服装</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">电器</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">洗护</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">饮食</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">餐厨</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">婴童</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">文体</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li>
+						<a href="#">特色区</a>
+						<div class="sub-nav">
+                          	<ul>
+                          		<li>
+                          			<div class="xialiang">
+                          				
+                          			</div>
+                          			<a href="#">T恤</a>
+                          			
+                          		</li>
+                          		<li>
+                          			<div class="chuangpin"></div>
+                          			<a href="#">运动</a>
+                          		</li>
+                          		<li>
+                          			<div class="beizhen"></div>
+                          			<a href="#">牛仔</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiaju"></div>
+                          			<a href="#">Yessing</a>
+                          		</li>
+                          		<li>
+                          			<div class="dengju"></div>
+                          			<a href="#">女士</a>
+                          		</li>
+                          		<li>
+                          			<div class="shouna"></div>
+                          			<a href="#">男鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="buyi"></div>
+                          			<a href="#">拖鞋</a>
+                          		</li>
+                          		<li>
+                          			<div class="jiashi"></div>
+                          			<a href="#">鞋配</a>
+                          		</li>
+                          		<li>
+                          			<div class="lvxing"></div>
+                          			<a href="#">袜子</a>
+                          		</li>
+                          		<li>
+                          			<div class="shailiang"></div>
+                          			<a href="#">丝袜 </a>
+                          		</li>
+                          		<li>
+                          			<div class="yiliao"></div>
+                          			<a href="#">配饰</a>
+                          		</li>
+                          		<li>
+                          			<div class="chongwu"></div>
+                          			<a href="#">眼镜</a>
+                          		</li>
+                          		
+                          	</ul>
+                          </div>
+						</li>
+						<li><a href="#">为你严选</a></li>
+						<li><a href="#">众筹</a></li>
+						
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="art">
+  <ul class="tu">
+    <li><img src="./css/images/p1.jpg"></li>
+    <li><img src="./css/images/p2.jpg"></li>
+    <li><img src="./css/images/p3.jpg"></li>
+    <li><img src="./css/images/p4.jpg"></li>
+    <li><img src="./css/images/p5.jpg"></li>
+    <li><img src="./css/images/p6.jpg"></li>
+    <li><img src="./css/images/p7.jpg"></li>
+    <li><img src="./css/images/p8.jpg"></li>
+  </ul>
+</div>	
+<!-- <div id="art">
+        <div id="imgs">
+            <ul>
+                <li><a href=""><img src="./css/images/p1.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p2.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p3.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p4.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p5.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p6.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p7.jpg" alt=""></a></li>
+                <li><a href=""><img src="./css/images/p8.jpg" alt=""></a></li>
+
+                
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div id="nav">
+            <ul>
+                <li><a class="current">1</a></li>
+                <li><a>2</a></li>
+                <li><a>3</a></li>
+                <li><a>4</a></li>
+                <li><a>5</a></li>
+                <li><a>6</a></li>
+                <li><a>7</a></li>
+                <!-- <li><a>8</a></li> -->
+            </ul>
+        </div>
+        <div id="preous"><</div>
+        <div id="next">></div>
+    </div> -->
+<div class="one">
+	<div class="onewrap">
+		<div class="title">
+			<div class="left1"><a href="#">品牌制造商</a></div>
+			<div class="left2">工厂直达消费者，剔除品牌溢价</div>
+			<div class="right"><a href="#">更多制造商&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<ul class="pinpai">
+				<li>
+					<div class="ck">CK制造商</div>
+					<div class="money">25元起</div>
+				</li>
+				<li>
+				    <div class="west">Nine West 制造商</div>
+					<div class="money2">209元起</div>	
+				</li>
+				<li>
+					<div class="sea">海外制造商</div>
+					<div class="money3">9.9元起</div>
+				</li>
+				<li>
+					<div class="ralph">Ralph Lauren 制造商</div>
+					<div class="money4">0元起</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="two">
+	<div class="twowrap">
+		<div class="title">
+			<div class="left1"><a href="#">新品首发</a></div>
+			<div class="left2">为你寻找世间好物</div>
+			<div class="right"><a href="#">更多新品&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<ul class="xinpin">
+				<li>
+				    <div class="rose1">
+				    <ul class="box">
+				    	<li><a href="#"><img src="./css/images/efd70648fe438bdaf4466691a34032fb.jpg" ></a></li>
+				    	<li><a href="#"><img src="./css/images/1c62af3f665ec8a7b9c9723cf1fe3320.png "></a></li>
+				    </ul>
+				    </div>
+				    <div class="red">
+				    <div class="qixi">七夕推荐</div>
+					<div class="rose"><a href="#">情定七夕·红玫瑰</a></div>
+					<div class="dollor"><i class="fa fa-cny"></i>88</div></div>
+				</li>
+				<li>
+				 <div class="akoya2">
+				    <ul class="box1">
+				    	<li><a href="#"><img src="./css/images/cb83083c4ae16600103bc361ed0d0870.jpg" ></a></li>
+				       <li><a href="#"><img src="./css/images/5fb2a0296ebbb1d25865fce3276beca4.png "></a></li>
+				    </ul>
+				    </div>
+					<div class="akoya"><a href="#">真爱一生AKOYA珍珠14K项链</a></div>
+					<div class="dollor1"><i class="fa fa-cny"></i>1699</div>
+				</li>
+				<li>
+				<div class="akoya3">
+				    <ul class="box2">
+				    	<li><a href="#"><img src="./css/images/6dc63e7750e19c36ca235b29f7c347cf.jpg" ></a></li>
+				       <li><a href="#"><img src="./css/images/3e3c5d801613c27c22cb817309a40168.png "></a></li>
+				    </ul>
+				    </div>
+					<div class="akoya1"><a href="#">真爱一生AKOYA珍珠14K耳钉</a></div>
+					<div class="dollor2"><i class="fa fa-cny"></i>1699</div>
+				</li>
+				<li>
+				<div class="wine1">
+				    <ul class="box3">
+
+				    	<li><a href="#"><img src="./css/images/162651bf60f69559e3cdb3bf5fdbe0b6.jpg" ></a></li>
+				       <li><a href="#"><img src="./css/images/790ecbc8e5b42e7756948b5476d0fcee.png "></a></li>
+				    </ul>
+				    </div>
+				    <div class="wine2">
+				    <div class="qixi1">七夕推荐</div>
+					<div class="wine"><a href="#">日本制造 和歌山柚子梅酒</a></div>
+					<div class="dollor3"><i class="fa fa-cny"></i>129</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="three">
+	<div class="threewrap">
+		<div class="title">
+			<div class="left1"><a href="#">人气推荐</a></div>
+			<div class="left2">编辑推荐</div>
+			<div class="left3"><a href="#">热销总榜</a></div>
+			<div class="right"><a href="#">更多新品&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<ul class="renqi">
+				<li>
+				  <div class="A">
+				    <div class="description">泰国制造</div>
+				    <div class="chuangdian"><img src="./css/images/rujiaochuangdian.png"></div>
+				    <div class="today">今日特价</div>
+				    <div class="cm"><a href="#">泰国制造 天然乳胶床垫 5CM标准款</a></div>
+				    <div class="money">￥1699.2</div>
+				 </div>
+				</li>
+				<li>
+				  <div class="B">
+				   
+				    <div class="jianguo"><img src="./css/images/meirijianguo.png"></div>
+				    <div class="meiri"><a href="#">每日坚果（4种坚果+3种果干）</a></div>
+				    <div class="money">￥35.8</div>
+				   </div>
+				</li>
+				<li>
+				<div class="C">
+				    <div class="kaozhen"><img src="./css/images/kaozhen.png"></div>
+				    <div class="xianshi">限时购</div>
+				    <div class="meiri"><a href="#">网易智造日式无线靠枕</a></div>
+				    <div class="money">￥295.2</div>
+				   </div>
+				   </li>
+				<li>
+					<div class="D">
+				    <div class="yashua"><img src="./css/images/yashua.png"></div>
+				    <div class="xianshi">限时购</div>
+				    <div class="biansu"><a href="#">全净皓齿变速式声波电动牙刷</a></div>
+				    <div class="money">￥208</div>
+				   </div>
+				</li>
+				<li>
+					<div class="E">
+				    <div class="zhensi"><img src="./css/images/zhensi.png"></div>
+				    <div class="xianshi">服装特惠</div>
+				    <div class="biansu"><a href="#">女士真丝睡衣</a></div>
+				    <div class="money">￥495.38</div>
+				   </div>
+				</li>
+				<li>
+					<div class="F">
+				    <div class="anmotie"><img src="./css/images/anmotie.png"></div>
+				    <div class="xianshi">电器特惠</div>
+				    <div class="biansu"><a href="#">网易智造随身低频按摩帖</a></div>
+				    <div class="money">￥179</div>
+				   </div>
+				</li>
+				<li>
+				 <div class="G">
+				    <div class="zhuanyi"><img src="./css/images/zhuanyi.png"></div>
+				    <div class="xianshi">爆品</div>
+				    <div class="biansu"><a href="#">网易智造随身低频按摩帖</a></div>
+				    <div class="money">￥179</div>
+				  </div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="four">
+	<div class="fourwrap">
+		<div class="title">
+			<div class="left1"><a href="#">限时购</a></div>
+			<div class="right"><a href="#">更多新品&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<ul class="xianshigou">
+				<li>
+					<div><img src="./css/images/more.PNG" alt=""></div>
+				</li>
+				<li>
+					<div class="A">
+						<div class="duanku"><img src="./css/images/duanku.png" alt=""></div>
+						<div class="B">
+						<div class="nanshi"><a href="#">男士无缝针织运动短裤</a></div>
+						
+						<div class="shushi">给你运动时的舒适感</div>
+						<div class="money"></div>
+						<div class="liji">立即抢购</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="A">
+						<div class="anmo"><img src="./css/images/anmo.png" alt=""></div>
+						<div class="B">
+						<div class="tianran"><a href="#">泰国制造 天然乳胶枕</a></div>
+						
+						<div class="shushi">纯天然乳胶 SGS 全程监控</div>
+						<div class="money"></div>
+						<div class="liji">立即抢购</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="A">
+						<div class="guo"><img src="./css/images/guo.png" alt=""></div>
+						<div class="B">
+						<div class="chuanshi"><a href="#">100年传世珐琅锅 全家系列</a></div>
+						
+						<div class="shushi">仅售供应商建议的1/7</div>
+						<div class="money"></div>
+						<div class="liji">立即抢购</div>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="A">
+						<div class="anmoyi"><img src="./css/images/anmoyi.png" alt=""></div>
+						<div class="B">
+						<div class="jianya"><a href="#">网易智造减压按摩仪</a></div>
+						
+						<div class="shushi">让眼睛享受全方位按摩</div>
+						<div class="money"></div>
+						<div class="liji">立即抢购</div>
+						</div>
+					</div>
+				</li>
+				
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="five">
+	<div class="fivewrap">
+		<div class="title">
+			<div class="left1"><a href="#">福利社</a></div>
+			<div class="right"><a href="#">查看全部福利&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="zaoshi"><img src="./css/images/zaoshi.jpg" alt=""></div>
+			<div class="middle">
+				<div class="middlewrap">
+					<div class="title">
+			          <div class="left2"><a href="#">今日特价</a></div>
+			          <div class="right2"><a href="#">查看全部&nbsp;&gt;</a></div>
+		           </div>
+		           <div class="tejia">
+		           	<ul class="jinri">
+		           		<li>
+		           			<div class="A">
+						      <div class="fulizi"><img src="./css/images/fulizi.png" alt=""></div>
+						      <div class="B">
+						      <div class="tianran"><a href="#">泰国制造 负离子天然乳胶枕</a></div>
+						
+						     
+						     <div class="money"></div>
+						     <div class="liji">立即抢购</div>
+						</div>
+					</div>
+		           		</li>
+		           		<li>
+		           			<div class="A">
+						      <div class="shutiao"><img src="./css/images/shutiao.png" alt=""></div>
+						      <div class="B">
+						      <div class="tianran"><a href="#">薯条脆100克</a></div>
+						
+						     
+						     <div class="money"></div>
+						     <div class="liji">立即抢购</div>
+						      </div>
+					       </div>
+		           		</li>
+		           		<li>
+		           			<div class="A">
+						      <div class="wuhuo"><img src="./css/images/wuhuo.png" alt=""></div>
+						      <div class="B">
+						      <div class="tianran"><a href="#">日本制造 无火香氛No.66</a></div>
+						
+						     
+						     <div class="money"></div>
+						     <div class="liji">立即抢购</div>
+						      </div>
+					       </div>
+		           		</li>
+		           		<li>
+		           			<div class="A">
+						      <div class="zhangpeng"><img src="./css/images/zhangpeng.png" alt=""></div>
+						      <div class="B">
+						      <div class="tianran"><a href="#">双层防风防潮展开3-4人帐篷</a></div>
+						
+						     
+						     <div class="money"></div>
+						     <div class="liji">立即抢购</div>
+						      </div>
+					       </div>
+		           		</li>
+		           	</ul>
+		           </div>
+				</div>
+			</div>
+			<div class="tunhuo">
+			 <div class="tunhuowrap">
+				<div class="top">
+					<div class="title1">
+						<div class="left"><a href="#">量贩囤货</a></div>
+						<div class="right"><a href="#">更多&nbsp;&gt;</a></div>
+					</div>
+					<div class="product1">
+						<ul class="liangfan">
+							<li>
+								<div class="A">
+									<div class="guoshu">
+										<img src="./css/images/guoshu.png" alt="">
+									</div>
+									<div class="canju"><a href="#">日本制造 果蔬餐具...</a></div>
+									<div class="money">
+										
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="B">
+									<div class="chunmian">
+										<img src="./css/images/chunmian.png" alt="">
+									</div>
+									<div class="yintong"><a href="#">棉质生活 婴儿纯棉...</a></div>
+									<div class="money1">
+										
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="bottom">
+					<div class="title2">
+						<div class="left"><a href="#">今日APP价</a></div>
+						<div class="right"><a href="#">更多&nbsp;&gt;</a></div>
+					</div>
+					<div class="product2">
+						<ul class="app">
+							<li>
+								<div class="C">
+									<div class="nvchun">
+										<img src="./css/images/nvchun.png" alt="">
+									</div>
+									<div class="jiaju"><a href="#">女士纯棉撞色家居服</a></div>
+									<div class="money3">
+										
+
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="D">
+									<div class="qingzhi">
+										<img src="./css/images/qingzhi.png" alt="">
+									</div>
+									<div class="xiankong"><a href="#">轻质线控自拍杆</a></div>
+									<div class="money4">
+										
+
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			 </div>
+		   </div>
+	</div>
+
+  </div>
+</div>
+<div class="six">
+	<div class="sixwrap">
+		<div class="title">
+			<div class="left1"><a href="#">居家</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">夏凉</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">床品件套&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">被枕</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">家具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">灯具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">收纳</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">布艺软装</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/remaibang.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/liangyong.png"></div>
+				          
+				          <div class="cm"><a href="#">冬夏两用 护脊椰棕弹簧床垫</a></div>
+				          <div class="money">￥2099</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">3色可选</div>
+
+				         <div class="yi"><img src="./css/images/zhentao.png"></div>
+				          
+				          <div class="cm"><a href="#">真丝枕套</a></div>
+				          <div class="money">￥99</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">2色可选</div>
+
+				         <div class="yi"><img src="./css/images/yaodai.png"></div>
+				          
+				          <div class="cm"><a href="#">草本石墨烯暖宫腰带</a></div>
+				          <div class="money">￥199</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">2色可选</div>
+
+				         <div class="yi"><img src="./css/images/shounahe.png"></div>
+				          
+				          <div class="cm"><a href="#">日式木质收纳盒2层</a></div>
+				          <div class="money">￥139</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="seven">
+	<div class="sevenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">鞋包配饰</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">行李箱</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">女士包袋&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">男士包袋</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">钱包及小匹品</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">男鞋</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">女鞋</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">拖鞋</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/xiebao.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				    <div class="description">4色可选</div>
+
+				         <div class="yi"><img src="./css/images/fangxing.png"></div>
+				          
+				          <div class="cm"><a href="#">牛皮方形锁扣马鞍包</a></div>
+				          <div class="money">￥399</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/chuanwa.png"></div>
+				          
+				          <div class="cm"><a href="#">AAA级抑菌 轻彩男士船袜</a></div>
+				          <div class="money">￥25.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">9色可选</div>
+
+				         <div class="yi"><img src="./css/images/dengji.png"></div>
+				          
+				          <div class="cm"><a href="#">20寸纯PC"铝框"(非全铝）登机箱</a></div>
+				          <div class="money">￥349</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">3色可选</div>
+
+				         <div class="yi"><img src="./css/images/gouwu.png"></div>
+				          
+				          <div class="cm"><a href="#">马卡龙色褶皱感可折叠购物袋</a></div>
+				          <div class="money">￥29</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="eight">
+	<div class="eightwrap">
+		<div class="title">
+			<div class="left1"><a href="#">服装</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">T恤</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">运动&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">牛仔</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">Yessing轻运动</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">女士上装</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">女士下装</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">女式外套</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/xiebao.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				    <div class="description">2色可选</div>
+
+				         <div class="yi"><img src="./css/images/kongqineiku.png"></div>
+				          
+				          <div class="cm"><a href="#">女士空气内裤</a></div>
+				          <div class="money">￥49</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				          <div class="description">2色可选</div>
+
+				         <div class="yi"><img src="./css/images/vling.png"></div>
+				          <div class="but">加价购</div>
+				          <div class="cm"><a href="#">100%纯棉 女士纯棉百搭V领T恤</a></div>
+				          <div class="money">￥25.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">3色可选</div>
+
+				         <div class="yi"><img src="./css/images/diaodai.png"></div>
+				          <div class="but">服装特惠</div>
+				          
+				          <div class="cm"><a href="#">女士匹马棉条纹吊带</a></div>
+				          <div class="money">￥349</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">4色可选</div>
+
+				         <div class="yi"><img src="./css/images/wufeng.png"></div>
+				          
+				          <div class="cm"><a href="#">女士无缝运动T恤</a></div>
+				          <div class="money">￥29</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="nine">
+	<div class="ninewrap">
+		<div class="title">
+			<div class="left1"><a href="#">电器</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">生活电器</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">厨房电器&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">个护健康</a>&nbsp;&nbsp;&nbsp;/</li>
+					
+					<li><a href="#">数码</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">影音娱乐</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/dianqi.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+
+				         <div class="yi"><img src="./css/images/xunhuanshan.png"></div>
+				          <div class="but">满额减</div>
+				          
+				          <div class="cm"><a href="#">网易智造可以循环扇</a></div>
+				          <div class="money">￥499</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				         <div class="yi"><img src="./css/images/chuchengqi.png"></div>
+				          <div class="but">爆品</div>
+				          <div class="cm"><a href="#">网易智造N520除螨除尘器</a></div>
+				          <div class="money">￥499</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/shoujike.png"></div>
+				          
+				          <div class="cm"><a href="#">网易智造空气感超薄苹果手机壳</a></div>
+				          <div class="money">￥39</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/pobiji.png"></div>
+				          
+				          <div class="cm"><a href="#">破壁机/冷热双杯</a></div>
+				          <div class="money">￥699</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="ten">
+	<div class="tenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">洗护</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">纸品湿巾</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">家庭清洁&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">生理用品</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">浴室用具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">毛巾</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">收纳美妆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">香氛</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/xihu.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/qidian.png"></div>
+				          
+				          <div class="cm"><a href="#">网易严选 水光气垫精华粉底霜</a></div>
+				          <div class="money">￥239</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">7色可选</div>
+
+				         <div class="yi"><img src="./css/images/changrong.png"></div>
+				          
+				          <div class="cm"><a href="#">阿瓦提长绒棉超柔毛巾</a></div>
+				          <div class="money">￥23</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/zhijiayou.png"></div>
+				          
+				          <div class="cm"><a href="#">小方盖系列 水性可撕指甲油</a></div>
+				          <div class="money">￥14.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/xisebu.png"></div>
+				          <div class="but">满件减</div>
+				          <div class="cm"><a href="#">防船染洗衣吸色布</a></div>
+				          <div class="money">￥12.5</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="eleven">
+	<div class="elevenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">饮食</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">甜品鲜花</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">糕点</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">小食</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">坚果炒货</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">果干</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">肉类零食</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">冲饮</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/yinshi.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/qiaokeli.png"></div>
+				          
+				          <div class="cm"><a href="#">爱的乐章黑巧克力礼盒304克</a></div>
+				          <div class="money">￥108</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/dangao.png"></div>
+				          
+				          <div class="cm"><a href="#">雪麸蛋糕</a></div>
+				          <div class="money">￥9.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/shutiaocui.png"></div>
+				          
+				          <div class="cm"><a href="#">薯条脆100克</a></div>
+				          <div class="money">￥9.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/mangguogan.png"></div>
+				          <div class="but">N元任选</div>
+				          <div class="cm"><a href="#">芒果干118克</a></div>
+				          <div class="money">￥16</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="twelve">
+	<div class="twelvewrap">
+		<div class="title">
+			<div class="left1"><a href="#">餐厨</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">水具杯壶</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">餐具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">锅具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">清洁保鲜</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">厨房配件</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">刀剪砧板</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">茶具咖啡具酒具</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/canchu.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/chazu.png"></div>
+				          
+				          <div class="cm"><a href="#">影青玉泥功夫茶组</a></div>
+				          <div class="money">￥499</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/xiccailan.png"></div>
+				          
+				          <div class="cm"><a href="#">双底面淘米洗菜篮</a></div>
+				          <div class="money">￥23.7</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/buxiugang.png"></div>
+				          
+				          <div class="cm"><a href="#">德式六件套不锈钢刀</a></div>
+				          <div class="money">￥399</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/baowenhu.png"></div>
+				          <div class="but">限时购</div>
+				          <div class="cm"><a href="#">玻璃内胆保温壶</a></div>
+				          <div class="money">￥119</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="thirteen">
+	<div class="thirteenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">婴童</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">暑假好物</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">新生儿服装</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">小童服装</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">中大童服装</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">内衣搭配</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">童鞋童包</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">婴童洗护</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/yinton.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/ertong.png"></div>
+				          
+				          <div class="cm"><a href="#">4件装 极软纱 纯棉打底T恤</a></div>
+				          <div class="money">￥499</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/mianbang.png"></div>
+				          
+				          <div class="cm"><a href="#">棉质生活 婴儿两用棉棒</a></div>
+				          <div class="money">￥9.9</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/mianwa.png"></div>
+				          
+				          <div class="cm"><a href="#">3双装 婴幼儿萌心彩棉袜</a></div>
+				          <div class="money">￥29</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/nanyin.png"></div>
+				          <div class="but">限时购</div>
+				          <div class="cm"><a href="#">白色素雅短袖T恤</a></div>
+				          <div class="money">￥19.5</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fourteen">
+	<div class="fourteenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">文本</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">文具</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">运动户外</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">唱片</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">礼品卡</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">游戏点卡</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">暴雪周边</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">我的世界</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/wenben.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				         <div class="yi"><img src="./css/images/tianli.png"></div>
+				          
+				          <div class="cm"><a href="#">弹力编制休闲腰带 网易游戏</a></div>
+				          <div class="money">￥99</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/lingqiandai.png"></div>
+				          
+				          <div class="cm"><a href="#">炫彩系列硅胶零钱袋</a></div>
+				          <div class="money">￥16</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/anquan.png"></div>
+				          
+				          <div class="cm"><a href="#">安全带护肩 阴阳师</a></div>
+				          <div class="money">￥48</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+
+				         <div class="yi"><img src="./css/images/fulian.png"></div>
+				          <div class="but">限时购</div>
+				          <div class="cm"><a href="#">复联3多用盖毯 午休毯 漫威</a></div>
+				          <div class="money">￥169</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="fiveteen">
+	<div class="fiveteenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">特色区</a></div>
+			<div class="left2">
+				<ul class="chuangpin">
+					<li><a href="#">日本馆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">韩国馆&nbsp;&nbsp;&nbsp;/</a></li>
+					<li><a href="#">东南亚馆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">欧美馆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">澳新馆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">智造馆</a>&nbsp;&nbsp;&nbsp;/</li>
+					<li><a href="#">春风馆</a></li>
+				</ul>
+			</div>
+			<div class="right"><a href="#">查看更多&nbsp;&gt;</a></div>
+		</div>
+		<div class="content">
+			<div class="remai">
+				<img src="./css/images/tesequ.jpg" alt="">
+			</div>
+			<div class="loop">
+				<ul class="pretty">
+					<li>
+					  <div class="A">
+				    <div class="description">韩国制造</div>
+
+				         <div class="yi"><img src="./css/images/daicanfen.png"></div>
+				          
+				          <div class="cm"><a href="#">韩国制造 乳清蛋白代餐粉</a></div>
+				          <div class="money">￥25</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				          
+
+				         <div class="yi"><img src="./css/images/duizhen.png"></div>
+				          <div class="but">新品</div>
+				          <div class="cm"><a href="#">七夕限量 泰国制造 乳胶颗粒颈枕对枕</a></div>
+				          <div class="money">￥131.4</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">意大利制造</div>
+
+				         <div class="yi"><img src="./css/images/maiyi.png"></div>
+				          <div class="but">服装特惠</div>
+				          
+				          <div class="cm"><a href="#">意大利制造 男女款100%超细美毛衣</a></div>
+				          <div class="money">￥899</div>
+				      </div>
+					</li>
+					<li>
+						<div class="A">
+				    <div class="description">美国制造
+				    </div>
+
+				         <div class="yi"><img src="./css/images/jinghuaji.png"></div>
+				          
+				          <div class="cm"><a href="#">美国制造 除甲醛空气净化剂</a></div>
+				          <div class="money">￥227</div>
+				      </div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="sixteen">
+	<div class="sixteenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">甄选家</a></div>
+			<div class="left2">我们在寻找，对生活有态度的你</div>
+		</div>
+		<div class="content">
+			<ul class="A">
+				<li>
+					<div><img src="./css/images/yangpin.jpg" alt=""></div>
+				</li>
+				<li>
+					<div><img src="./css/images/jianyi.jpg" alt=""></div>
+				</li>
+				<li>
+					<div><img src="./css/images/yangshi.jpg" alt=""></div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div class="seventeen">
+	<div class="seventeenwrap">
+		<div class="title">
+			<div class="left1"><a href="#">大家都在说</a></div>
+			<div class="left2">生活没有统一标准</div>
+   </div>
+	</div>
+    <div class="content">
+
+      <ul class="pre">
+        <li>
+          <img src="./css/images/pi1.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi2.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi3.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi4.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi5.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi6.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi7.jpg" >
+          <div class="pic"></div>
+        </li>
+        <li>
+          <img src="./css/images/pi8.jpg" >
+          <div class="pic"></div>
+        </li>
+      </ul>
+    </div>
+</div>
+<div class="eighteen">
+	<div class="eighteenwrap">
+		<div class="top">
+			<ul class="one">
+				<li>
+					<div class="kehu">客户服务</div>
+					<div class="kefu">
+						<a href="#"><i class="fa fa-headphones"></i></a>
+						<p><a href="#">在线客服</a></p>
+					</div>
+					<div class="yonghu">
+						<a href="#"><i class="fa fa-commenting-o"></i></a>
+						<p><a href="#">用户反馈</a></p>
+					</div>
+				</li>
+				<li>
+					<div class="yanxuan"></div>
+          <div class="weixin"></div>
+				</li>
+				<li>
+					<div class="guanzhu">扫码下载严选APP</div>
+					<div class="erweima"><img src="./css/images/erweima.png" alt=""></div>
+					<div class="xinren">下载领1000元新人礼包</div>
+				</li>
+			</ul>
+		</div>
+		
+	</div>
+	<div class="bottom">
+			<div class="wrap">
+				<div class="one">
+					<ul class="loo">
+						<li>
+							
+						</li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="lop">
+					<div class="lp">
+						<ul class="op">
+							<li><a href="#">关于我们</a></li>
+							<li><a href="#">帮助中心</a></li>
+							<li><a href="#">售后服务</a></li>
+							<li><a href="#">配送与验收</a></li>
+							<li><a href="#">商务合作</a></li>
+							<li><a href="#">企业采购</a></li>
+							<li><a href="#">开放平台</a></li>
+							<li><a href="#">搜索推荐</a></li>
+							<li><a href="#">友情链接</a></li>
+						</ul>
+					</div>
+					<div class="li">网易公司版权所有 © 1997-2018&nbsp;&nbsp;   <a href="#"> 食品经营许可证：JY13301080111719 出版物经营许可证：新出发滨字第0132号 单用途商业预付卡备案证：330100AAC0024</a></div>
+				</div>
+			</div>
+		</div>
+</div>
+</body>
+</html>
